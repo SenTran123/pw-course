@@ -1,4 +1,4 @@
-Các lệnh
+Giải thích các lệnh: //update 3June
 git init -> Khởi tạo respon mới 
 git add <file_name> ->  Đưa 1 file cụ thể vào staging 
 git add .  -> Đưa tất cả các file mới hoặc thư mục được thay đổi vào staging 
