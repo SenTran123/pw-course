@@ -1,0 +1,5 @@
+Giải thích các câu lệnh: 
+git commit --amend => Sửa commit gần nhất
+git commit --amend -m"<message>" => Sửa commit gần nhất & đổi message cũ bằng message mới được nhập
+git restore --staged <file> => Loại bỏ file khỏi staging 
+git reset HEAD~1 => Quay lại commit trước, bỏ commit mới nhất
