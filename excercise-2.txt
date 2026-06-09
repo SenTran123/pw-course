@@ -1,5 +1,78 @@
+-----Bài 1--------------
 Giải thích các câu lệnh: 
 git commit --amend => Sửa commit gần nhất
 git commit --amend -m"<message>" => Sửa commit gần nhất & đổi message cũ bằng message mới được nhập
 git restore --staged <file> => Loại bỏ file khỏi staging 
 git reset HEAD~1 => Quay lại commit trước, bỏ commit mới nhất
+
+-----Bài 2--------------
+Có folder lesson-3
+Tạo 3 file: file1, file2, file3:
+    Vùng working: k
+    Vùng Staging: k
+    Vùng Repository: k
+Chạy lệnh git init:
+    Vùng working: file1, file2, file3
+    Vùng Staging: k
+    Vùng Repository: k
+Chạy lệnh git commit -m"init project"
+    Vùng working: k
+    Vùng Staging: k
+    Vùng Repository: file1, file2, file3
+Chạy lệnh git add file1
+    Vùng working: file2, flile3
+    Vùng Staging: file2
+    Vùng Repository: k
+Chạy lệnh git commit -m"add file"
+    Vùng working: k
+    Vùng Staging: k
+    Vùng Repository: file1, file2, file3
+Chạy lệnh git add .
+    Vùng working: k
+    Vùng Staging: kfile1, file2, file3
+    Vùng Repository: k
+Chạy lệnh git restore --staged file2
+    Vùng working: file2
+    Vùng Staging: file1, file3
+    Vùng Repository: k
+Chạy lệnh git commit -m"add all files"
+    Vùng working: k
+    Vùng Staging: k
+    Vùng Repository: file1, file2, file3
+Chạy lệnh git reset HEAD~1
+    Vùng working: k
+    Vùng Staging: file1, file2, file3
+    Vùng Repository: k
+
+-----Bài 3--------------
+Có folder lesson-3-git
+Chạy lệnh git init:
+    Vùng working: k
+    Vùng Staging: k
+    Vùng Repository: k
+Tạo file file1.txt, file2.txt, oops/file3.txt
+    Vùng working: file1.txt, file2.txt, oops/file3.txt
+    Vùng Staging: k
+    Vùng Repository: k
+Thêm file gitignore, thêm 2 dòng: 
+    file1.txt
+    oops/
+    Vùng working: file 1
+    Vùng Staging: k
+    Vùng Repository: k
+Chạy lệnh git add .
+    Vùng working: k
+    Vùng Staging: file1.txt, file2.txt, oops/file3.txt
+    Vùng Repository: k
+Chạy lệnh git commit -m"init project"
+    Vùng working: k
+    Vùng Staging: k
+    Vùng Repository: file1.txt, file2.txt, oops/file3.txt
+
+
+
+
+
+
+
+
